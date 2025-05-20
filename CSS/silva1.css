@@ -1,0 +1,139 @@
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.but {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  color: #EC6EC6;
+  background-color: #EC6EC6;
+  left: 600px;
+  top: 300px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.buth {
+  grid-column: 4;
+  grid-row: 4;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0059FF;
+  color: #0059FF;
+  font-family: Helvetica;
+  border-radius: 50%;
+  width: 20;
+  height: 20;
+  text-align: center;
+  align-self: center;
+}
+
+.buth:hover {
+  color: white;
+  background-color: #0059FF;
+  cursor: pointer;
+}
+
+.grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 30px 35px;
+  display: none;
+}
+
+.poem {
+  position: absolute;
+  font-family: "Marcellus", serif;
+  font-size: 60px;
+  width: 60%;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.text1 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 30px;
+  grid-column: 1;
+  grid-row: 4;
+  width: 400px;
+  opacity: 100%;
+}
+
+.talerze {
+  grid-column: 5;
+  grid-row: 2;
+  place-items: center;
+}
+
+.case {
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: end;
+}
+
+.herb {
+  
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+  height: 30;
+  width:80;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: #0059FF;
+  z-index: 1;
+}
+
+.herb:hover {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+
+@media (max-width: 1000px) {
+  .poem {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text1 {
+    font-size: 1.5rem;
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text2 {
+    font-size: 1.5rem;
+    grid-row: 4;
+  }
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>O tym co zbyt brzydkie, by móc odwrócić wzrok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/brzydkie2.css">
+        <link rel="stylesheet" href="CSS/selection.css">
+        <link rel="stylesheet" href="CSS/test.css">
+    </head>
+<body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    <div class="image-container">
+        <div class="image">
+            <img src="data/multipla.png" width="100">
+        </div>
+    </div>
+    <div class = "powrot">
+    <a href="zbytbrzydkie.html">
+POWRÓT</a></div>
+    <div class="text">
+        <p>
+Kiedy miałam jakieś 10 lat po raz pierwszy zobaczyłam Fiata Multiplę. Było to na długo zanim po raz pierwszy usłyszałam jeden ze znanych Ci pewnie żartów na jego temat, nie byłam jeszcze nauczona, że ten samochód powinien wywoływać we mnie jakąś reakcję. Naprawdę ciężko mi opisać co wtedy poczułam. Można nazwać to obrzydzeniem połączonym z niewytłumaczalnym lękiem, można nazwać to bardzo silnym wrażeniem, że coś jest nie tak, ale absolutnie nie mogłam powiedzieć co to było. Multipla wygląda jak coś co nigdy nie powinno powstać, jak dwa stworzenia pożerające się nawzajem, tkwiące w nieświadomym, bolesnym uścisku, pętli obrzydliwego cierpienia. Nie chodzi nawet o to, że jest brzydka. Brzydota nie jest obrzydliwa sama w sobie. Samochód, który jest brzydki nie wywołuje we mnie żadnych odczuć, jest mi zwyczajnie obojętny. Multipla wywołała we mnie lęk, którego nie umiałam wtedy zracjonalizować. Poczucie zagrożenia, które nie mogło być w żaden sposób nazwane. Bo co właściwie mógłby zrobić mi zwyczajny pojazd? Być może brzmi to dla Ciebie śmiesznie. To przecież tylko auto. Jednak mój dziecięcy, bezpieczny świat był bardzo mały a ja zawsze próbowałam ochronić go za wszelką cenę. Wobec tego zagrożenie było na każdym kroku. W katalogu rzeczy, które wywoływały we mnie podobne uczucia (chociaż z różnym natężeniem) poza standardowymi pająkami czy pijawkami, znajdowało się mnóstwo różnych rzeczy. Zdecydowana większość jedzenia, przede wszystkim owoce, z którymi dalej mam problem, konie, krowy i każde inne zwierzę, które ma głowę większą od mojej, surowe mięso, natrętne myśli o gryzieniu pasów bezpieczeństwa (nigdy tego nie zrobiłam, ale samo wyobrażenie sprawiało, że nie mogłam dokończyć zdania), ten jeden odcinek Ziarna w którym Albercikowi wyrosły wąsy. Nie było trudno, żeby coś stało się nieprzyjemne, zdeformowane, obrzydliwe. A jednak za każdym razem kiedy widziałam Multiplę nie mogłam odwrócić wzroku.<br> <br>
+Czasem moje własne ciało staje się dla mnie źródłem obrzydliwego. Tyle w nim płynów, których jedynym celem jest przedłużyć gatunek, tyle reakcji nad którymi nie mam kontroli, tyle instynktów o których nigdy nie powiem na głos. Czuję zbyt dużą wilgoć moich organów i czuję brud, który jest pod skórą i którego nigdy nie wyszoruję, niezależnie od tego ile czasu poświęcę, żeby go zdrapać. 
+
+        </p>
+    </div>
+
+    <div class="dalej">
+        <a href="brzydkie3.html">DALEJ</a></div>
+
+<script>
+    const image = document.querySelector('.image');
+    const container = document.querySelector('.image-container');
+
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+
+    let x = Math.random() * (containerWidth - 150);
+    let y = Math.random() * (containerHeight - 150);
+    let dx = (Math.random () > 0.5 ? 1 : -1) * 0.8;
+    let dy = (Math.random () > 0.5 ? 1 : -1) * 0.8;
+
+    function moveImage() {
+        x += dx;
+        y += dy;
+
+        if (x <= 0 || x >= containerWidth - 150) {
+            dx *= -1;
+        }
+        if (y <= 0 || y>= containerHeight - 150) {
+            dy *= -1;
+        }
+    
+        image.style.transform = `translate(${x}px, ${y}px)`;
+
+        requestAnimationFrame(moveImage);
+    }
+    moveImage();
+</script>
+</body>
+</html>

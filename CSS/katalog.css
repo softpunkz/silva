@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.powrot {
+  position: absolute;
+  height: 30;
+width:115;
+margin: 40;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: #E1FF9D;
+background-color: #0059FF;
+}
+
+.powrot:hover {
+  font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+
+}
+
+.red {
+  position: absolute;
+  background-color: rgb(255, 64, 0);
+  color:rgb(255, 64, 0);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  font-family: Helvetica;
+}
+
+#red1 {
+  top: 1620px;
+  left: 60px;
+}
+
+#red2 {
+  top: 1150px;
+  left: 600px;
+}
+
+#red3 {
+  top: 50px;
+  left: 90vw;
+}
+
+#i4 {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+ display: none;
+}
+
+#buty {
+  position: absolute;
+  z-index: -2;
+  padding: 0;
+ bottom: 0;
+ display: none;
+}
+
+#bat {
+  position: absolute;
+  z-index: -1;
+  height: 50%;
+  right: 0px;
+  bottom: 800;
+  display: none;
+}
+
+.box {
+  padding-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.katalog {
+ 
+  padding: 100px 15% 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.katalog img {
+  width: 100px;
+  height: 130px;
+ 
+  justify-self: center;
+  border-style: solid;
+  border-width: 2px;
+  margin: 100px;
+  transition: 0.3s ease-out;
+}
+
+.katalog img:hover {
+  width: 200px;
+  height: 260px;
+  margin: 0;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  font-family: "Marcellus", serif;
+  font-size: 12px;
+  display: none;
+  pointer-events: none;
+  max-width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.yellow {
+  background-color: gold;
+  color: gold;
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  font-size: 40px;
+}
+
+.marquee {
+  --gap: 1rem;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+
+
+.stripe {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+
+p {
+  font-family: "Helvetica";
+  font-size: 25px;
+}

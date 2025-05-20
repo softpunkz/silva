@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: "Lora";
+    font-size: 3.2vh;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+.powrot {
+    position: relative;
+    height: 30;
+  width:115;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF
+}
+
+.powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.dalej {
+    position: relative;
+    height: 30;
+    width:80;
+bottom: 100;
+left: 92vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+#myVideo {
+    position: fixed;
+    width: 40vw;
+    height: 70vh;
+    margin-left: 5vw;
+    margin-top: 70;
+    z-index: 0;
+  }
+
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 200;
+    z-index: 2;
+}
+
+.text {
+    grid-column: 2;
+}
+
+.ph {
+    grid-column: 1;
+    width: 1fr;
+}

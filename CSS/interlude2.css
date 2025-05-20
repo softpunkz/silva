@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  cursor: none;
+}
+
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+ 
+  
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s height 0.5s;
+  z-index: 100;
+}
+
+.outer-cursor {
+  position: fixed;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+ background-color: 0059FF;
+ z-index: 7;
+ pointer-events: none;
+  transition: 0.1s;
+}
+
+.mask-cont {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.mask {
+    height: 100vh;
+    width: 1000px;
+    pointer-events: none;
+}
+
+.tekst {
+    background-color: #ff0000;
+    color: white;
+    width: 740px;
+    font-size: 36;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Lora";
+    padding: 300px 60px 400px;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .powrot {
+    position: absolute;
+    height: 30;
+  width:115;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF;
+  z-index: 90;
+  }
+  
+  .powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+  }
+  
+  .dalej {
+    position: relative;
+    height: 30;
+    width:80;
+  bottom: 100;
+  left: 92vw;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF;
+  }
+  
+  .dalej:hover {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+  }

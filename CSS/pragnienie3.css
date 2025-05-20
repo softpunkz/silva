@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .powrot {
+    position: absolute;
+    z-index: 3;
+      height: 30;
+    width:115;
+    margin: 40;
+    font-size: 25;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    color: E1FF9D;
+    background-color: #0059FF;
+  }
+  
+  .powrot:hover {
+      font-family: 'Playfair Display';
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 100%;
+    cursor: pointer;
+  }
+
+  .dalej {
+    position: relative;
+    height: 30;
+    width:80;
+bottom: 0;
+z-index: 3;
+margin-bottom: 100;
+left: 90vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.tekstjeden {
+    font-family: "Playfair Display";
+    padding-top: 130px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 100%;
+    position: fixed;
+    width: 40%;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 0 0 0 50px white;
+    z-index: 2;
+}
+
+.tekstdwa {
+    font-family: "Playfair Display";
+    font-size: 60px;
+    width: 50%;
+    padding-top: 100vh;
+    margin-left: 250px;
+    z-index: 1;
+}
+
+.teksttrzy {
+    position: relative;
+    margin-top: 100px;
+    font-family: Helvetica;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    background-color: #EC6EC6;
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-self: center;
+    z-index: 3;
+}

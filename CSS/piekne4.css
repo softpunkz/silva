@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+      overflow-x: hidden;
+overflow-y: hidden;
+}
+
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  button {
+    color: inherit;
+    border: inherit;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  
+  .powrot {
+      position: relative;
+      height: 30;
+    width:115;
+    margin: 40;
+    font-size: 25;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    color: E1FF9D;
+    background-color: 0059FF
+  }
+  
+  .powrot:hover {
+      font-family: 'Playfair Display';
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 100%;
+    cursor: pointer;
+  }
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 50vw;
+    height: 100px;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 10%;
+    margin-left: 40px;
+    margin-top: 0px;
+    z-index: 2;
+}
+
+.bubblebut {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top:200px;
+  left: 850px;
+  z-index: 2;
+}
+
+#but {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 20;
+  height: 20;
+  color: #ff5900;
+  background-color: #ff5900;
+  cursor: pointer;
+}
+
+.rys {
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    margin-left: 800px;   
+}
+
+
+
+#tekst {
+  display: block;
+    position: relative;
+    padding: 0vh 40vh 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.nawias {
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+p {
+    font-family: "Lora";
+    font-size: 30;
+    padding: 90;
+    line-height: 1.5;
+    margin-top: 100px;
+    animation: appear 5s ease-in;
+animation-timeline: view();
+animation-range: entry 0 cover 20%;
+}
+
+.moral {
+    position: relative;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: 40;
+    z-index: 2;
+    width: 50vw;
+    left: 10vw;
+    margin: 70;
+   
+}
+
+.menu-wrap {
+  position: relative;
+  bottom: 0;
+  width: 100wv;
+margin-bottom: 100;
+margin-right: 50px;
+display: flex;
+flex-direction: column;
+align-items: end;
+gap: 10px;
+}
+
+.menu {
+position: relative;
+    height: 30;
+width: auto;
+
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF;
+line-height: 100%;
+}
+
+.menu:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+cursor: pointer;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

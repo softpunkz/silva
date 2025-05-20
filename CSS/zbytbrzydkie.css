@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;;
+}
+
+
+
+@font-face {
+  font-family: "My School Handwriting";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/MySchoolHandwriting.woff2) format("woff2");
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.powrot {
+    position: absolute;
+    z-index: 99;
+    height: 30;
+  width:115;
+  margin: 40px 90%;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF
+}
+
+.powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+}
+
+.heading {
+  height: 239px;
+  width: 452px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.fot {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+display: grid;
+grid-template-columns: repeat(20, 1fr);
+grid-template-rows: repeat(15, 1fr);
+}
+
+.fot img {
+  width: 200px;
+  margin: 50px;
+  border-color: #ff5900;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#jeden {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#dwa {
+  grid-column: 5;
+  grid-row: 2;
+  margin: 20%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 25px 200px;
+}
+
+.text1 {
+  width: 595px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100;
+  animation: appear 5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+.dalej {
+  position: relative;
+  height: 30;
+  width:80;
+bottom: 100;
+left: 92vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.img {
+  position: absolute;
+  z-index: -1;
+  transform: translateY(0);
+  transition: transform 0.1s ease;
+}
+
+.img img {
+  height: 1400px;
+  margin: -50%;
+  display: block;
+}
+
+h1 {
+  font-family: "Marcellus", Helvetica;
+  font-size: 55px;
+  font-weight: normal;
+  text-align: end;
+}
+
+p {
+  font-family: "Lora";
+  font-size: 28px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

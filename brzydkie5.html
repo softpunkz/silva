@@ -1,0 +1,57 @@
+<html>
+    <head>
+      <title>O tym co zbyt brzydkie, by móc odwrócić wzrok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/brzydkie5.css">
+        <link rel="stylesheet" href="CSS/selection.css">
+     <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    <div class="grid">
+        <button id="button1" class="button">
+    <p>ale ja wszystko widzę.</p></button>
+    <button id="button2" class="button hidden">
+        <p>i kiedy patrzę na Ciebie, to widzę larwy pod Twoją skórą.</p>
+    </button>
+    <button id="button3" class="button hidden">
+        <p>i może to jest nawet w porządku.</p>
+    </button>
+    <button id="button4" class="button hidden">
+        <p>Może tak naprawdę<br> potrzebujemy swojego<br> brudu, żeby zachować<br> swoje człowieczeństwo.<br> Nie żebyśmy mieli jakiś wybór. <br><br>
+        Piękno potrzebuje<br> wydzielin z przełyku<br>wieloryba, końskiego potu,<br>ludzkiej krwi. Zapach<br> kwiatów jest piękny, ale<br> jest nudny w porównaniu<br> do gruczołów piżmowca.
+        </p>
+    </button>
+    <div id ="button5" class="button hidden">
+       <div class = "menu"><a href =piekne1.html>MARMUR<span class = "nawias">(</span>2<span class = "nawias">)</span></a></div>
+        
+        <div class="menu"><a href=pragnienie1.html>GŁÓD<span class = "nawias">(</span>3+4<span class = "nawias">)</span></a></div>
+        <div class="menu"><a href=katalog.html>KATALOG</a></div><div class="menu"><a href=index.html>STRONA GŁÓWNA</a></div>
+    </div>
+</div>
+<script>
+    const buttons = [
+      document.getElementById('button1'),
+      document.getElementById('button2'),
+      document.getElementById('button3'),
+      document.getElementById('button4'),
+      document.getElementById('button5')
+    ];
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        button.classList.add('hidden');
+        if (index + 1 < buttons.length) {
+          buttons[index + 1].classList.remove('hidden');
+        }
+      });
+    });
+  </script>
+    </body>
+    </html>

@@ -1,0 +1,101 @@
+<html>
+    <head>
+      <title>ANTRAKT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/interlude.css">
+
+ <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+  <div class = "powrot"><a href=pragnienie3.html>POWRÓT</a></div>
+  <div class = "skrawki">Po wszystkich moich pragnieniach zostały mi tylko skrawki i niedopałki. Patrzę na swoje ręce i wcale nie mam pewności czy na pewno są moje.
+    <div class = "dalej"><a href=interlude2.html>DALEJ</a></div>
+  </div>
+    <div class="pane" style="right: 200px; top: 100px">
+      <div class="title"></div>
+        <img src="data/katalog/zakupy.jpg">
+        
+        <svg id="diagonal-lines" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="100%" y2="100%" stroke="#0059FF" stroke-width="2"/>
+            <line x1="100%" y1="0" x2="0" y2="100%" stroke="#0059FF" stroke-width="2"/>
+          </svg>
+          <div class="corner">D</div>
+      </div>
+    
+      <script>
+const panes = document.querySelectorAll('.pane')
+
+let z = 1
+
+panes.forEach((pane) => {
+  const title = pane.querySelector('.title')
+  const corner = pane.querySelector('.corner')
+
+  pane.addEventListener('mousedown', () => {
+    z = z + 1
+    pane.style.zIndex = z
+  })
+
+  title.addEventListener('mousedown', (event) => {
+    pane.classList.add('is-dragging')
+
+    let l = pane.offsetLeft
+    let t = pane.offsetTop
+
+    let startX = event.pageX
+    let startY = event.pageY
+
+    const drag = (event) => {
+      event.preventDefault()
+
+      pane.style.left = l + (event.pageX - startX) + 'px'
+      pane.style.top = t + (event.pageY - startY) + 'px'
+    }
+
+    const mouseup = () => {
+      pane.classList.remove('is-dragging')
+
+      document.removeEventListener('mousemove', drag)
+      document.removeEventListener('mouseup', mouseup)
+    }
+
+    document.addEventListener('mousemove', drag)
+    document.addEventListener('mouseup', mouseup)
+  })
+
+  corner.addEventListener('mousedown', (event) => {
+    let w = pane.clientWidth
+    let h = pane.clientHeight
+
+    let startX = event.pageX
+    let startY = event.pageY
+
+    const drag = (event) => {
+      event.preventDefault()
+
+      pane.style.width = w + (event.pageX - startX) + 'px'
+      pane.style.height = h + (event.pageY - startY) + 'px'
+    }
+
+    const mouseup = () => {
+      document.removeEventListener('mousemove', drag)
+      document.removeEventListener('mouseup', mouseup)
+    }
+
+    document.addEventListener('mousemove', drag)
+    document.addEventListener('mouseup', mouseup)
+  })
+})
+
+
+      </script>
+    
+</body>
+</html>

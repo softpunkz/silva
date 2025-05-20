@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>O tym co zbyt brzydkie, by móc odwrócić wzrok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/zbytbrzydkie.css">
+        <link rel="stylesheet" href="CSS/selection.css">
+     <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    <div class="i-cur"></div>
+    <div class="o-cur"></div>
+<div class="intro">
+    <div class = "powrot"><a href="index.html">POWRÓT</a></div>
+    <div class="heading">
+    <h1>o tym, co zbyt <span style="font-family: 'My School Handwriting'; color: #ff5900">brzydkie</span> by móc odwrócić wzrok</h1></div>
+    <div class ="fot">
+        <img src = "data/katalog/telefik_amelki.jpg" id = "jeden">
+        <img src = "data/katalog/selfie12.jpg" id = "dwa">
+    </div>
+    <div class ="img">
+        <img src ="data/i1.png">
+    </div>
+    
+</div>
+<div class ="content">
+<div class="text1">
+    <p>Obrzydzenie jest ostrzeżeniem. Nie patrz tam. Nie dotykaj tego. Odejdź. Zapomnij. Wyrzuć to z siebie. Zwymiotuj to. Nie chcesz tego w swoim otoczeniu, nie chcesz tego w sobie. Ciężko jest wytłumaczyć czemu coś potrafi obrzydzić, ale jednoznacznie można połączyć to z poczuciem niebezpieczeństwa. Twój komfortowy świat jest w stanie zagrożenia i Twoim zadaniem jest go ochronić. Wewnątrz Twojego świata masz wszystko pod kontrolą. Czujesz się bezpiecznie wokół znanych Ci form, smaków i zapachów. Wszystko wokół Ciebie jest Ci znane a Twoje ciało nie zwraca się przeciwko Tobie. Na co dzień wolisz nie myśleć o tym jak łatwo jest to stracić. Przypomina Ci o tym dopiero widok larwy w koszyku z owocami i zapach gnijącego mięsa. Wyrzuć to, podepcz, zapomnij. Zabij to i nie myśl o tym więcej. <br> <br>
+
+    A jednak nie możesz nie myśleć, kiedy zaglądasz do owoców kolejnego dnia. Mimo woli myślisz o małych jajeczkach, które mogą kryć się w skórce pomarańczy. Jajeczka nie pasują do Twojego bezpiecznego świata i uczucie, które czujesz, kiedy ich obraz pojawia się w Twojej głowie bardzo skutecznie Ci o tym przypomina. Nie jest to przecież nic dziwnego. Nie chcesz robactwa w swoim jedzeniu, nie chcesz wrzodów, blizn i strupów ziemistych. Chcesz czystości i odrobiny bezpieczeństwa, odrobiny poczucia, że wszystko jest pod kontrolą. </p>
+    </div>
+    </div>
+    <div class="dalej">
+    <a href="brzydkie2.html">DALEJ</a></div>
+    <script>
+        const fasterScrollElement = document.querySelector('.img');
+        window.addEventListener('scroll', () => {
+    
+          const scrollSpeed = window.scrollY * -1.2; 
+          fasterScrollElement.style.transform = `translateY(${scrollSpeed}px)`;
+        });
+      </script>
+</body>
+</html>

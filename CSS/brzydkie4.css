@@ -1,0 +1,86 @@
+.content {
+  display: flex;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.powrot {
+  position: relative;
+  height: 30;
+width:115;
+margin: 40;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.powrot:hover {
+  font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.dalej {
+  position: relative;
+  height: 30;
+  width:80;
+bottom: 100;
+left: 92vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.text {
+  flex: 1;
+  flex-basis: 70%;
+  flex-grow: 1;
+  width: 2fr;
+  padding: 60px 10%;
+  font-family: "Lora";
+  font-size: 28px;
+  line-height: 1.5;
+  animation: appear 0.3s ease-in;
+}
+
+.img {
+  height: auto;
+  position: relative;
+  margin-left: -150px;
+  transform: translateY(0);
+  z-index: 10;
+  transition: transform 0.1s ease;
+}
+
+.img img {
+  width: 150%;
+  height: 150%;
+  margin: 0 30%;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}

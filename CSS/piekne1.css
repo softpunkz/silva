@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+
+.intro {
+    position: absolute;
+height: 100vh;
+width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-: center;
+}
+
+.piekne {
+    font-family: "Charm";
+    color: #ff5900;
+    line-height: 1;
+}
+
+.piekne:hover {
+font-family: "Playfair Display";
+font-style: italic;
+line-height: 1;
+font-size: 84%;
+text-decoration: underline;
+}
+
+h1 {
+    
+    width: 40vw;
+    font-family: "Marcellus";
+    font-size: 80;
+    text-align: center;
+    margin-top: 10%;
+    font-weight: normal;
+    line-height: 100%;
+    margin-top: 16%;
+}
+
+.foto img {
+    width: 100;
+    height: 100;
+    margin: 120; 
+}

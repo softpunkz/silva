@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .powrot {
+    position: relative;
+    height: 30;
+  width:115;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF;
+  z-index: 90;
+  }
+  
+  .powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+  }
+  
+  .dalej {
+    position: relative;
+    height: 30;
+    width:120;
+  bottom: 100;
+  left: 90vw;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF;
+  }
+  
+  .dalej:hover {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+  }
+
+.intro {
+    width: 100vw;
+    height: 80vh;
+   
+}
+
+.intro img {
+    position: absolute;
+   animation: disappear 5s ease-in;
+animation-timeline: view();
+animation-range: exit 0 cover 100%;
+}
+
+.skan {
+    width: 30vw;
+    right: 50px;
+    top: 40px;
+}
+
+.zeszyt {
+    width: 20%;
+    right: 400px;
+    top: 100px;
+}
+
+.muji {
+    width: 5%;
+    right: 700px;
+    top: 280px;
+}
+
+.tekst {
+    width: 700px;
+    font-family: "Lora";
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.tekst p {
+    font-style:italic ;
+}
+
+.podpis {
+    position: relative;
+    width: 400px;
+    left: 200px;
+    margin: 100px;
+    animation: appear 5s ease-in;
+animation-timeline: view();
+animation-range: entry 0 cover 30%;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  font-family: "Marcellus", serif;
+  font-size: 12px;
+  display: none;
+  pointer-events: none;
+  max-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+@keyframes disappear {
+    from {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

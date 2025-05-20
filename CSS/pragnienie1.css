@@ -1,0 +1,218 @@
+body, html {
+    margin: 0;
+  padding: 0;
+  height: 100%;
+    overflow-x: hidden;
+}
+
+.intro {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+  position: absolute;
+  display: flex;
+  top: 20vh;
+  right: 80vw;
+}
+
+.button{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0059FF;
+  color: #0059FF;
+  font-family: Helvetica;
+  border-radius: 50%;
+  width: 20;
+  height: 20;
+  text-align: center;
+}
+
+.button:hover {
+  color: white;
+  background-color: #0059FF;
+  cursor: pointer;
+}
+
+#png1 {
+  position: absolute;
+  height: 120vh;
+  top: -5vh;
+  left: 50vw;
+  display: none;
+}
+
+#png2 {
+  position: absolute;
+  height: 200px;
+  left: 25vw;
+  top: 10vh;
+  border: solid 1.5px;
+  display: none;
+}
+
+.title {
+  place-self: center;
+  align-self: center;
+  font-family: "Charm";
+  font-size: 60;
+  padding: 5;
+  font-weight: 500; 
+
+}
+
+.jeden {
+    font-family: Helvetica;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#flare {
+    position: absolute;
+    z-index: 0;
+    opacity: 50%;
+}
+
+.cont {
+    position: relative;
+}
+
+.flare1 {
+    height: 30%;
+    filter: hue-rotate(20deg) blur(10px);
+    rotate: -20deg;
+    margin: 0% 10%;
+}
+
+.flare2 {
+    height: 80%;
+    filter: hue-rotate(80deg) blur(13px);
+    rotate: 70deg;
+    margin-left: 30%;
+    margin-top: 10%;
+    object-fit: scale-down;
+}
+
+.text1 {
+  z-index: 2;
+  display: flex;
+justify-self: center;
+align-self: center;
+  width: 595px;
+height: auto;
+  animation: appear 5s ease-in;
+animation-timeline: view();
+animation-range: entry 0 cover 20%;
+}
+
+p {
+  font-family: "Lora";
+  font-style: italic;
+  line-height: 1.7;
+  font-size: 30;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+.koniec {
+    position: relative;
+    height: 50;
+    width:200;
+bottom: 0;
+margin-bottom: 100;
+left: 85vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+line-height: 1;
+background-color: 0059FF
+}
+
+.koniec:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 1;
+}
+
+.overlay {
+    font-family: Helvetica, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    position: fixed;
+    height: 496px;
+    width: 700px;
+    position: fixed;
+      bottom: 0;
+    font-size: 22;
+    z-index: 9;
+    line-height: 1.5;
+    background-color: #EC6EC6;
+    color: white;
+    margin-bottom: 10%;
+    }
+
+.overlay.active {
+    transform: translate(-50%, -50%);
+}
+
+.dalej {
+    height: 30;
+    width:80;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: #E1FF9D;
+background-color: #0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+}
+
+.powrot {
+    position: absolute;
+    height: 30;
+  width:115;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF
+}
+
+.powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

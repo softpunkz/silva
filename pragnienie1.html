@@ -1,0 +1,62 @@
+<html>
+    <head>
+      <title>PRAGNIENIE1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/pragnienie1.css">
+<link rel="stylesheet" href="CSS/selection.css">
+ <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    
+    <div class = "intro"> 
+      <div class = "but">
+      <div class = "button" onclick="klika()">A</div><div class = "button" onclick="klike()">E</div></div>
+      <img src = "data/i3.png" id = "png1" class = "png hidden"><img src = "data/portret2.png" id = "png2" class = "png hidden">
+      <div class="powrot"><a href="index.html">POWRÓT</a></div><h1 class = "title">pragnienie<span class = "jeden">1</span></h1>
+    </div>
+   
+    <div class = "cont">
+    <!--<img src = "data/flare/flare1.png" class = "flare1" id ="flare">
+    <img src = "data/flare/flare1.png" class = "flare2" id="flare"> -->
+<div class = "text1"><p>Świat nie może przestać rosnąć. Każde żywe istnienie może obumrzeć albo rozwijać się dalej. Ciągle się stawać. Nie możemy się zatrzymać, bo żeby żyć musimy też pragnąć, czujemy głód, który nigdy nie zazna satysfakcji, bo jej brak jest warunkiem życia. To tak naturalne, tak oczywiste, tak codzienne. Tak ludzkie. Tak jak larwa nie może nic poradzić na to, że w końcu stanie się wiosennym żukiem, tak ja nie zatrzymam siebie w dążeniu do spełnienia moich pragnień, których tak często sama nie rozumiem. Może jest jakiś cel w tym, że tak często chcemy tego, czego nigdy nie będziemy mieć. Pragnienie niemożliwego tworzy wiecznie niedomknięty obieg, który niczym sinusoida będzie coraz bliżej swojego celu, ale nie potrafi się z nim zbiec. Następnie każdy niedomknięty obieg napędza dalej kolejne obiegi, tworzy kolejne pragnienia, kolejne formy, którymi powinniśmy się stać. To wszystko kumuluje się w misterną sieć, która oplata całe stworzenie. Czasem czuję, że to wszystko można ułożyć w jakiś niesamowicie skomplikowany algorytm, który pcha życie do przodu, algorytm, który nigdy nie zostanie sfinalizowany i rozrasta materię niczym nowotwór. </p>
+</div>
+<div class = "koniec" onclick="toggleOverlay()">KONIEC BYŁBY ZBYT ŁATWY</div>
+</div>
+<div class = "overlay" id = "overlay">No i znowu to zrobiłam. Znowu wzięłam się za temat, który jest dla mnie o wiele za duży. Zawsze to sobie robię. Doznaję jakiegoś olśnienia i jestem przekonana, że o tym właśnie muszę opowiedzieć, a potem mnie to przerasta, frustruje i męczy. Znowu upadam pod ciężarem moich własnych pragnień. Przecież nie jestem filozofką, ani teoretykiem fizyki, żeby pisać o naturze świata i jest mi teraz nawet trochę wstyd, że w ogóle mam czelność  się wypowiadać. Tak ostatecznie to jest moja praca dyplomowa, a nie rozmowa w barze. Zawsze chcę za dużo, a potem się na tym potykam i nie potrafię przestać. Teraz przygniata mnie strach przed tym, czego w ogóle chciałam. Wolę się wycofać, cofnąć, zniknąć. Moja własna oscylacja między lękiem a pragnieniem potrafi być aż obsesyjna i to jest wyjątkowo męczące. Męczę się i cierpię a potem znów wchodzę w to samo. Dlaczego znowu to sobie zrobiłam? Dlaczego znów wzięłam na siebie więcej niż umiem udźwignąć?  
+    <div class = "dalej"><a href = "pragnienie2.html">DALEJ</a></div>
+</div>
+<script>
+    function toggleOverlay() {
+      const overlay = document.getElementById('overlay');
+      overlay.classList.toggle('active');
+    }
+  </script>
+  <script>
+    function klika() {
+  var x = document.getElementById("png1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+    <script>
+      function klike() {
+    var x = document.getElementById("png2");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+      </script>
+    </body>
+    </html>

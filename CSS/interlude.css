@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+body::selection {
+  background-color: none;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+:root {
+  --pane-default-width: 500px;
+--pane-default-height: 500px;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.powrot {
+  position: relative;
+  height: 30;
+width:115;
+margin: 40;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.powrot:hover {
+  font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.dalej {
+position: absolute;
+height: 30;
+width:80;
+top: 470px;
+right: 0px;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+
+.skrawki {
+position: absolute;
+width: 500px;
+  height: 500px;
+top: 100px;
+  right: 200px;
+  background-color: #0059FF;
+  color: white;
+  font-family: Helvetica;
+  font-size: 30;
+}
+
+
+.pane {
+  position: absolute;
+  width: var(--pane-default-width);
+  height: var(--pane-default-height);
+  border: 2px solid #0059FF;
+    box-sizing: border-box;
+    overflow: clip;
+    min-width: 160px;
+min-height: 160px;
+}
+
+.pane .corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: #0059FF;
+  position: absolute;
+  z-index: 10;
+  cursor: nwse-resize;
+  font-family: Helvetica;
+  color: white;
+  text-align: center;
+  line-height: 1.5;}
+
+  .pane img {
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+max-width: 100%;
+max-height: 100%;
+
+object-fit: cover;
+
+webkit-user-drag: none;
+user-drag: none;
+
+pointer-events: none;
+  }
+
+  .pane .title {
+      cursor: move;
+      width: inherit;
+      height: inherit;
+  }
+
+#resizable-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+#diagonal-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+
+.handle {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.handle-edge {
+  position: absolute;
+  background: transparent;
+}
+
+.handle-edge.right { right: 0; top: 0; width: 10px; height: 100%; cursor: ew-resize; }
+.handle-edge.left { left: 0; top: 0; width: 10px; height: 100%; cursor: ew-resize; }
+.handle-edge.bottom { bottom: 0; left: 0; width: 100%; height: 10px; cursor: ns-resize; }
+.handle-edge.top { top: 0; left: 0; width: 100%; height: 10px; cursor: ns-resize; }
+
+
+
+.tl { top: -5px; left: -5px; cursor: nw-resize; }
+.tr { top: -5px; right: -5px; cursor: ne-resize; }
+.bl { bottom: -5px; left: -5px; cursor: sw-resize; }
+.br { bottom: -5px; right: -5px; cursor: se-resize; }

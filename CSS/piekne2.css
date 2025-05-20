@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap
+}
+
+
+h1 {
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 5vh;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.powrot {
+    position: relative;
+    height: 30;
+  width:115;
+  margin: 40;
+  font-size: 25;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: E1FF9D;
+  background-color: 0059FF
+}
+
+.powrot:hover {
+    font-family: 'Playfair Display';
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.idk {
+    margin-top: 100;
+    position: fixed;
+    z-index: 0;
+}
+
+.jeden {
+    margin: 80;
+}
+
+.dwa {
+    margin-left: 350;
+    margin-top: -30;
+}
+
+.wrapper {
+    position: relative;
+  height: 100vh;
+  z-index: 2;
+  box-sizing: content-box;
+  height: 100vh;
+margin-left: 90%;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    gap: 150px;
+}
+
+p {
+    position: relative;
+    font-family: "Lora";
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    font-size: 3.2vh;
+    line-height: 1.6;
+    padding: 30;
+    min-width: 40vw;
+    height: 50vh;
+    background-color: rgb(255, 64, 0);
+    color: white;
+    white-space: normal;
+}
+
+.last {
+    top: -80;
+}
+
+.middle {
+    top: 100;
+}
+
+.spacer {
+    min-width: 20vw;
+    height: 50vh;
+  flex-shrink: 0;
+}
+
+.bg {
+    position: absolute;
+    top:0;
+    left: 900;
+    width: 200%; 
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.dalej-wrapper {
+    position: relative;
+    min-width: 10vw;
+    height: 100vh;
+    felx-shrink: 0;
+}
+
+.dalej {
+    position: absolute;
+    bottom: 120px;
+  right: 40px;
+  z-index: 10;
+    height: 30;
+    width:80;
+    margin: 40;
+    font-size: 25;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    color: E1FF9D;
+    background-color: 0059FF
+}
+
+.dalej:hover {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 100%;
+    cursor: pointer;
+}

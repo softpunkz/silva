@@ -1,0 +1,90 @@
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  .powrot {
+      position: relative;
+      height: 30;
+    width:115;
+    margin: 40;
+    font-size: 25;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    color: E1FF9D;
+    background-color: #0059FF;
+  }
+  
+  .powrot:hover {
+      font-family: 'Playfair Display';
+    font-style: italic;
+    text-decoration: underline;
+    line-height: 100%;
+    cursor: pointer;
+  }
+
+  .dalej {
+    position: relative;
+    height: 30;
+    width:118;
+bottom: 0;
+margin-bottom: 100;
+left: 90vw;
+font-size: 25;
+font-family: Helvetica, sans-serif;
+font-weight: 500;
+color: E1FF9D;
+background-color: 0059FF
+}
+
+.dalej:hover {
+font-family: 'Playfair Display';
+font-style: italic;
+text-decoration: underline;
+line-height: 100%;
+cursor: pointer;
+}
+
+.content {
+    position: relative;
+}
+
+.zdjecia {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.zdjecia img {
+    width: 600px;
+    padding: 20 40;
+}
+
+.tekst {
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 100;
+    font-size: 30;
+    line-height: 1.5;
+    font-family: "Lora";
+    background-color: #0059FF;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 10px #0059FF;
+    box-shadow: 0 0 20px 20px #0059FF;
+}
+
+#dobrze {
+    width: 21%;
+    place-items: center;
+}

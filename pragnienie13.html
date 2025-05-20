@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>PRAGNIENIE2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Charm:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/pragnienie13.css">
+        <link rel="stylesheet" href="CSS/selection.css">
+   <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    <div class = "intro">
+        <div class="powrot"><a href=pragnienie12.html>POWRÓT</a></div>
+    <img src ="data/skan_wiesz.png" class = "skan" data-title="Mimo wszystko mam nadzieję, że wiesz, że to było mi potrzebne. Jeśli myślisz, że wtedy byłam sobą, to być może nie znasz mnie wcale.">
+    <img src ="data/skan_zeszyt.png" class = "zeszyt"
+    data-title="Od dłuższego czasu kupuję te małe notesy Moleskin i może 16 złotych za mały notes to jest gruba przesada, ale one jakoś pięknie się starzeją. Na okładce zbieram ładne naklejki, które znajdę w czasie kiedy go używam. Ten mam od początku kwietnia i już ma jakieś tłuste plamy.">
+    <img src ="data/skan_muji.png" class = "muji"
+    data-title="Ten cienkopis kupiłam chyba w 2017 roku i cały czas używam ten sam, tylko wymieniam wkład. Muji zdąrzyło od tego czasu trochę zmienić jego rozmiar, więc muszę wkładać do środka kawałek waty, żeby się trzymał.">
+</div>
+<div class = "tekst">Ostatecznie byłam na plaży w tej sukience, wiesz? I poczułam się całkiem pięknie. Plaża była pusta i chłodna. Miałam wrażenie jakby była z innego świata niż ten w którym żyję ja. Morze ma w sobie coś oczyszczającego. Sól potrafi boleć, ale jednocześnie przynosi ulgę. Nie wiem czy poczułam się bardziej przynależna do ludzkości, ale na pewno poczułam się silniejsza. Może faktycznie jestem trochę silniejsza. Moje pragnienie stało się jakby trochę mniej obce i odrażające. Chyba to jest jakiś sposób. Oswajanie pragnień. Patrzenie im prosto w oczy. Pozostawianie śladów na drzewach, żeby znaleźć drogę do domu. Ciebie też się już nie boję.<br><br><p class = "psy"> Może jesteśmy dwoma przestraszonymi psami na tej samej smyczy, a może jesteśmy tylko ludźmi, zbyt głodnymi, żeby wiedzieć lepiej.</p><br> Wiem, tylko tyle, ale to wystarczy, żeby bać się odrobinę mniej i kochać mimo wszystko, odrobinę bardziej. Moja pustka nie jest mniejsza, ale poznaję jej wnętrze, rysuję jej mapę.  Ma Twój zapach i Twoje oczy. Teraz widzę Cię dobrze. Jesteś otchłanią we mnie, bólem po stracie, suchą ziemią tam gdzie powinny być kwiaty.  Jesteś moją sukienką założoną na plażę. Miłością, którą chciałabym czuć, ale już nie potrafię. Przynależnością, której brak jest jak mur między mną i światem. Jesteś jedynie cieniem. Tym, co się ze mną stanie gdy przewrócę się na drugą stronę. Widzę Twój kształt, ale nie ma w nim ciała.  Kiedy otwieram oczy znów jestem sama.<br><br>
+To chyba wszystko, co mam Ci do powiedzenia. Nie żegnam się, bo wiem, że jeszcze się spotkamy. Teraz potrzebuję czasu, potrzebuję w końcu się wyspać. Muszę podlać kwiaty.
+</div>
+<img src = "data/skan_dagny.png" class = "podpis">
+<div class = "dalej"><a href=index.html>KURTYNA</a></div>
+
+<div id="tooltip"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const tooltip = document.getElementById("tooltip");
+    const images = document.querySelectorAll(".intro img");
+
+    images.forEach(img => {
+        img.addEventListener("mouseenter", (e) => {
+            const title = e.target.getAttribute("data-title");
+
+            tooltip.innerHTML = `<strong>${title}`;
+            tooltip.style.display = "block";
+        });
+
+        img.addEventListener("mousemove", (e) => {
+            tooltip.style.left = `${e.pageX + 10}px`; 
+            tooltip.style.top = `${e.pageY + 18}px`;
+        });
+
+        img.addEventListener("mouseleave", () => {
+            tooltip.style.display = "none";
+        });
+    });
+});
+
+</script>
+    </body>
+    </html>

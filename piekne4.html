@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>O tym co zbyt piękne, żeby patrzeć</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/piekne4.css">
+<link rel="stylesheet" href="CSS/selection.css">
+ <link rel="stylesheet" href="CSS\test.css" />
+  </head>
+  <body>
+    <div class ="inner-cursor"><img src="data/inner.png"></div>
+   <div class="outer-cursor"></div>
+<script src ="JS/cursor.js"></script>
+    <div class = "powrot"><a href=piekne3.html>POWRÓT</a></div>
+    
+    <img src = "data/rys.png" class = "rys">
+    <div class = "bubblebut">
+    <img src="data/bubble.png" id ="bubble">
+    <div id="but" onclick = "but()"><button type="button" onclick="smoothScroll(document.getElementById('second'))">B</button></div>
+    </div>
+    <div id = "tekst"><p id = "second">Po co chcę stać się częścią harmonii, układu większego ode mnie? Uczestniczyć w pięknie tego świata? Wyznawać je jak religię? Kiedy zakładam biżuterię, ubieram sukienkę lub zbyt dużą koszulę, której miękki materiał dotyka moje ciało, zapraszam przyjemność i cierpienie, tak nierozerwalnie ze sobą spojone. Tworzę obraz samej siebie na podobieństwo piękna wszechświata i ukrywam wszystko, co pod spodem, moją miękkość, wilgotność, ukrwienie. Złączam siebie z moją symboliką i sygnalizuję swoje znaczenia. Idąc za jakąś pokrętną logiką chyba próbuję udowodnić sobie w ten sposób, że naprawdę jestem człowiekiem. W ten sposób wpiszę swoje ciało w okrąg i kwadrat, będą prawdziwa. Tak prawdziwa jak ludzie z komputera, jak postaci patrzących na mnie z renesansowych portretów.</p><p> Piękno jest prawdą. Musiałabym wywrócić się na drugą stronę, żeby nie potrafić w to wierzyć. Jednak to co we mnie ludzkie, jest tak dalekie od tego, co widzę jako ludzkie. Pragnę czegoś czego nigdy nie miałam i nigdy nie będę mogła mieć, albo może posiadałam od zawsze, ale nigdy nie zauważyłam, skupiona na pogoni za czymś kompletnie innym. Drążę, wycinam, wspinam się i uginam, układam się w pętle i ciągi logiczne nie prowadzące do nikąd. Zawsze jestem tak blisko odpowiedzi, że mogę jej dotknąć, ale nie dochodzę do niej nigdy.</p>
+     
+    
+    <div class = "moral">Rozdrapię każdą ranę licząc na to, że pod spodem moja skóra będzie gładka jak marmur.</div>
+    </div>
+
+    <div class = "menu-wrap">
+        <div class="menu"><a href=zbytbrzydkie.html>ROBACTWO<span class = "nawias">(</span>1<span class = "nawias">)</span></a></div>
+        <div class="menu"><a href=pragnienie1.html>GŁÓD<span class = "nawias">(</span>3+4<span class = "nawias">)</span></a></div>
+        <div class="menu"><a href=katalog.html>KATALOG</a></div><div class="menu"><a href=index.html>STRONA GŁÓWNA</a></div></div>
+    <script>
+        function but() {
+  document.body.style.overflowY = "auto";
+}
+      </script>
+      <script>
+        window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { 
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+      </script>
+    </body>
+    </html>
