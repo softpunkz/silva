@@ -12,7 +12,7 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
   
-    let rawPoints = font.textToPoints('SilVa', 0, 0, 450, {
+    let rawPoints = font.textToPoints('SilVa', 0, 0, 500, {
       sampleFactor: 0.05,
       simplifyThreshold: 0
     });
